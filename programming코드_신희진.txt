@@ -1,0 +1,27 @@
+#include <stdio.h>
+#pragma warning(disable:4996)
+ 
+int main() {
+	int money = 0; 
+	int price = 0; 
+	int change;
+
+	printf("손님으로 부터 받은 금액? : ");
+	scanf("%d", &money);
+
+	printf("물건 값은? : ");
+	scanf("%d", &price);
+
+	change = (money - price);
+
+	printf("거스름돈 : %d\n", money - price);
+	printf("%d 오만원\n", change / 50000);
+	printf("%d 만원\n", change / 10000);
+	printf("%d 오천원\n", (change % 10000)/5000);
+	printf("%d 천원\n", (change % 10000 % 5000 ) / 1000);
+	printf("%d 오백원\n", (change % 10000 % 5000 % 1000 ) / 500);
+	printf("%d 백원\n", (change % 10000 % 5000 % 1000 % 500 ) / 100);
+	printf("%d 백원\n", (change % 10000 % 5000 % 1000 % 500 % 100) / 10);
+
+	return 0;
+}
