@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+	float weight,moon = 0;
+	int menu = 0;
+	while (1) {
+		printf("몸무게 변환 프로그램\n\n");
+		printf("1.지구 --> 수성\n\n");
+		printf("2.지구 --> 달\n\n");
+		printf("메뉴를 고르시오!\n\n");
+
+		scanf_s("%d", &menu);
+
+		if (menu == 1) {
+			printf("지구에서의 몸무게를 입력하시오 :");
+			scanf_s("%f", &weight);
+			printf("수성에서 당신의 몸무게는 %.0fKg입니다.\n\n", weight * 0.38);
+			continue;
+		}
+		else if (menu == 2) {
+			printf("지구에서의 몸무게를 입력하시오 :");
+			scanf_s("%f", &weight);
+			printf("달에서 당신의 몸무게는 %.0fKg입니다.\n\n", weight * 0.17);
+		}
+		else {
+			printf("메뉴를 잘못입력하였습니다. 메뉴를 다시 입력하세요.\n\n");
+			continue;
+		}
+	}
+}
