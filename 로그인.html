@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>회원가입</title>
+	<style>
+ div{
+        padding; 15px;
+      }
+	</style>
+</head>
+<body>
+  <table width="500" height="500" align="center" style="margin-top:150px;">
+		<form name="reg" action="regresult.jsp" method="get">
+		<tr>
+			<th>회원가입</th>
+		</tr>
+		<tr>
+			<th>아이디</th>
+			<td><input type="text" name="id"></td>
+		</tr>
+		<tr>
+			<th>비밀번호</th>
+			<td><input type="password" name="pass"></td>
+		</tr>
+		<tr>
+			<th>이름</th>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<th>메일</th>
+			<td><input type="text" name="email"></td>
+		</tr>
+    <tr>
+      <th>취미</th>
+                    <td>
+                        <select name="habmm">
+                            <option value="">취미</option>
+                            <option value="01" >운동</option>
+                            <option value="02" >여행</option>
+                            <option value="03" >요리</option>
+                            <option value="04" >게임</option>
+		<tr>
+			<th>연락처</th>
+			<td><input type="text" name="tel1" size="3"> - 
+				<input type="text" name="tel2" size="4"> - 
+				<input type="text" name="tel3" size="4"></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2"><input type="submit" value="가입하기" >
+			<input type="reset" value="취소하기"></td>
+		</tr>
+		</form>
+	</table>
+</body>
+</html>
